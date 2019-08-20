@@ -46,7 +46,7 @@ const struct human_time_config DEFAULT_HUMAN_TIME = {
     10000000
   };
 
- extern void printHumanTimeConfiguration(human_time_config *configuration){
+ extern void printHumanTimeConfiguration(const human_time_config *configuration){
     printf("Human Time Configuration: \n");
     printf("%d hours per day\n", configuration->HOURS_PER_DAY);
     printf("%d minutes per hour\n",configuration->MINUTES_PER_HOUR);
@@ -54,5 +54,7 @@ const struct human_time_config DEFAULT_HUMAN_TIME = {
     printf("%d milliseconds per second\n", configuration->MILLISECOND_PER_SECOND);
     printf("%d nanoseconds per milliseconds\n", configuration->NANO_SECOND_PER_MILLISECOND);
   }
+
+
 
 #endif //MATH_108_TRIGONOMETRY_HUMAN_TIME_CONFIG_H
